@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blocky Animal by Ashcon Kafaipour</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="600" height="600">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <p id="fps">ms:0 | fps:0 </p>
+    <button id="animationJoint1OnButton">Waddle On</button>
+    <button id="animationJoint1OffButton">Waddle Off</button>
+    <br> <br>
+    <button id="HatAnimationButton_On" type="button">Hat On</button>
+    <button id="HatAnimationButton_Off" type="button">Hat Off</button>
+    <br> <br>
+    
+    <label for="joint1">Head Rotation</label>
+    <br>
+    <input type="range" id="joint1" min="-45" max="45" value="0">
+    <br>
+    
+    <label for="joint2">Torso Rotation</label>
+    <br>
+    <input type="range" id="joint2" min="-45" max="45" value="0">
+    <br>
+    
+    <label for="joint3">Left Foot Rotation</label>
+    <br>
+    <input type="range" id="joint3" min="-45" max="45" value="0">
+    <br>
+    
+    <label for="joint4">Right Foot Rotation</label>
+    <br>
+    <input type="range" id="joint4" min="-45" max="45" value="0">
+    <br>
+
+    <label for="joint5">Left Arm Rotation</label>
+    <br>
+    <input type="range" id="joint5" min="-30" max="180" step="1">
+    <br>
+
+    <label for="joint6">Right Arm Rotation</label>
+    <br>
+    <input type="range" id="joint6" min="-30" max="180" step="1">
+    <br>
+
+    <p>
+    Camera Angle On X<input type="range" min = "0" max="360" value="0" class = "slider" id="X">
+    <br>
+    Camera Angle On Y<input type="range" min = "0" max="360" value="0" class = "slider" id="Y">
+    <br>
+    Camera Angle On Z<input type="range" min = "0" max="360" value="0" class = "slider" id="Z">
+    </p>
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="BlockyAnimal.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Pyramid.js"></script>
+
+  </body>
+</html>
